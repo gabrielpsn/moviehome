@@ -3,17 +3,11 @@
     <div>
       <b-navbar toggleable="lg" type="dark" variant="info">
         <b-navbar-brand href="#">Movie Home</b-navbar-brand>
-
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
             <b-nav-item href="#">Home</b-nav-item>
-            <b-nav-item href="#">Release</b-nav-item>
-            <b-nav-item href="#">Coming Soon</b-nav-item>
           </b-navbar-nav>
-
-          <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-form>
               <b-form-input v-model="search" size="sm" class="mr-sm-4" placeholder="Search"></b-form-input>
@@ -114,23 +108,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.sessionGenre {
- background-color: #e2e8f0;
- padding: 15px;
- border-bottom-color: #4a5568;
-}
-
-.listMovies {
-  background-color: #ffffff;
-}
-#banner {
-  width: 100%;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative !important;
-}
-</style>
